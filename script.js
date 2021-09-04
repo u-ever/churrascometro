@@ -9,21 +9,24 @@ function calcular() {
 
     let people = parseFloat(adults.value) + parseFloat((kids.value) / 2)
 
-    if (time.value < 4) {
+    if (time.value == "" || adults.value == "" || kids.value == "") {
+        ltBeer.innerHTML = ``;
+        ltStDrink.innerHTML = ``;
+        kgBeef.innerHTML = `Digite os dados do Churrasco`
+    } else if  (time.value < 4) {
         beef = (people * 0.4).toFixed(1)
         beer = (adults.value * 1.2).toFixed(1)
         stDrink = (people * 1).toFixed(1)
-        kgBeef.innerHTML = `${beef} Kg de Carne`
-        ltBeer.innerHTML = `${beer} ml de Cerveja`;
-        ltStDrink.innerHTML = `${stDrink} Garrafas de 2L de Bebida`;
-
+        kgBeef.innerHTML = `${beef} Kg de Carne &#127830`
+        ltBeer.innerHTML = `${beer} Garrafas de 1,2 Lt de Cerveja &#127866`;
+        ltStDrink.innerHTML = `${stDrink} Garrafas de 2L de Bebida &#127865`;
     } else {
         beef = (people * 0.65).toFixed(1)
         beer = (adults.value * 2).toFixed(1)
         stDrink = (people * 1.5).toFixed(1)
-        kgBeef.innerHTML = `${beef} Kg de Carne`
-        ltBeer.innerHTML = `${beer} ml de Cerveja`;
-        ltStDrink.innerHTML = `${stDrink} Garrafas de 2L de Bebida`;
+        kgBeef.innerHTML = `${beef} Kg de Carne &#127830`
+        ltBeer.innerHTML = `${beer} ml de Cerveja &#127866`;
+        ltStDrink.innerHTML = `${stDrink} Garrafas de 2L de Bebida &#127865`;
     }
-    
+
 }

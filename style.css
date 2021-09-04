@@ -1,3 +1,57 @@
-html {
-    background-color: rgb(59, 44, 83);
+body {
+    background-image: linear-gradient(rgb(255, 115, 0), rgb(75, 36, 5), black);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.container {
+    background-color: rgb(54, 50, 43);
+    margin: auto;
+    margin-top: 5em;
+    width: 20em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.377);
+}
+
+#title {
+    color: rgb(189, 91, 91);
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 2px rgba(212, 109, 83, 0.397);
+}
+
+#adults, #kids, #time {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#btnchurras {
+    color: white;
+    width: 40%;
+    height: 25px;
+    border: none;
+    background-color: rgb(189, 91, 91);
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#btnchurras:hover {
+    color: rgb(189, 91, 91);
+    background-color: white;
+}
+
+#btnchurras:active {
+    color: white;
+    background-color: rgb(189, 135, 91);
+}
+
+#kgCarne, #ltCerveja, #ltBebida {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 130%;
 }
