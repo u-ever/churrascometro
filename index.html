@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Churrascometro</title>
-    <link rel="shortcut icon" href="barbecue.png">
+    <link rel="shortcut icon" href="assets/barbecue.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,21 +16,30 @@
 
 <body>
 
-    <div class="container">
-        <!-- Requisição de dados -->
-        <h1 id="title">Churrascômetro <span>&#127830</span></h1>
+    <section class="wall">
+        <h1>Saiba o que vai precisar <br> comprar para o <br> Churrasco!</h1>
+    </section>
 
-        <input type="number" name="adults" id="adults" placeholder="Adultos">
-        <input type="number" name="kids" id="kids" placeholder="Crianças">
-        <input type="number" name="time" id="time" placeholder="Duranção (h)">
-        <input type="submit" value="Calcular" id="btnchurras" onclick="calcular()">
-        <!-- Resultados -->
-        <p id="kgCarne"></p>
-        <p id="ltCerveja"></p>
-        <p id="ltBebida"></p>
+    <section class="app">
 
-    </div>
+        <div class="container">
+            <!-- LOGO -->
+            <img src="/assets/Churrascometro.png" id="logo">
+            <!-- Requisição de dados -->
+            <!-- <h1 id="title">Churrascômetro</h1> -->
 
+            <input type="number" name="adults" id="adults" placeholder="Adultos">
+            <input type="number" name="kids" id="kids" placeholder="Crianças">
+            <input type="number" name="time" id="time" placeholder="Duranção (h)">
+            <input type="submit" value="Calcular" id="btnchurras" onclick="calcular()">
+            <a href="index.html"><input type="button" value="Limpar" id="btnclear"></a>
+            <!-- Resultados -->
+            <p id="kgCarne"></p>
+            <p id="ltCerveja"></p>
+            <p id="ltBebida"></p>
+
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>

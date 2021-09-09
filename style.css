@@ -1,15 +1,49 @@
 body {
-    background-image: linear-gradient(rgb(255, 115, 0), rgb(75, 33, 5), rgb(56, 2, 2));
+    font-family: 'Bebas Neue', cursive;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-image: url(/assets/barbecue.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.wall {
+    width: 45%;
+    display: inline-block;
+    padding: 5vw;
+    color: white;
     font-family: 'Bebas Neue', cursive;
+    font-size: larger;
+    letter-spacing: 4px;
+}
+
+#logo {
+    width: 16em;
+    margin: auto;
+    text-align: center;
+    filter: contrast(0);
+    margin-bottom: 20px;
+}
+
+.app {
+    float: right;
+    display: inline-block;
+    width: 40%;
+    height: 100vh;
+    padding-inline: 10px;
+    background-image: linear-gradient(rgb(192, 88, 3), rgb(39, 16, 1), rgb(163, 3, 3));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .container {
     background-color: rgb(54, 50, 43);
     margin: auto;
     margin-top: 5em;
-    width: 20em;
+    width: 90%;
     padding: 1em;
     text-align: center;
     border-radius: 10px;
@@ -29,15 +63,24 @@ body {
     border-radius: 5px;
 }
 
-#btnchurras {
+input[type=number] {
+    height: 2em;
+    padding-left: 1em;
+    font-size: medium;
+}
+
+#btnchurras, #btnclear {
     color: white;
     width: 40%;
-    height: 25px;
+    height: 2em;
+    font-size: medium;
     border: none;
     background-color: rgb(189, 91, 91);
     border-radius: 5px;
     font-weight: 600;
     letter-spacing: 1px;
+    text-decoration: none;
+    margin-inline: 0.5em;
 }
 
 #btnchurras:hover {
@@ -55,3 +98,26 @@ body {
     margin-bottom: 10px;
     font-size: 130%;
 }
+
+@media only screen and (max-width: 640px) {
+
+    .wall{
+        display: block;
+        padding-bottom: 0px;
+        width: 90%;
+    }
+
+    .app {
+        display: block;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        margin: auto;
+        border-radius: 10px;
+    }
+    
+    .container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+} 
