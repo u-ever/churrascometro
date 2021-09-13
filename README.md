@@ -2,7 +2,7 @@
 
 ## 📋 Sobre o Projeto
 
-Desenvolvi este pequeno sitema para calcular a quantidade de carnem cerveja e bebida necessárias para um churrasco.
+Desenvolvi este pequeno sitema para calcular a quantidade de carnem cerveja e bebida necessárias para um churrasco. Tem responsividade em telas de menór resolução.
 
 ### Regras de Negócio
 
